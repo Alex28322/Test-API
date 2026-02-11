@@ -11,6 +11,8 @@ const pockemonTypeHTML = document.querySelector(".pockemon__type");
 
 errormessage.style.display = "none"
   pockemonImgHTML.style.display = "none"
+pockemonWeightHTML.textContent = ""
+pockemonTypeHTML.textContent = ""
 fetch(`https://pokeapi.co/api/v2/pokemon/${pockemonName}`)
 .then( response => {
         if(!response.ok){
